@@ -1,0 +1,19 @@
+{
+  "name": "anotacoes",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Bruno Batalha",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^2.0.2"
+  }
+}
