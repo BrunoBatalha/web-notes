@@ -1,2 +1,6 @@
 # Anotacoes
-Faça suas anotaçãoes e visualize logo abaixo
+Faça suas anotaçãoes e visualize-as logo abaixo.
+
+https://anotacoes-globais.herokuapp.com/
+
+
