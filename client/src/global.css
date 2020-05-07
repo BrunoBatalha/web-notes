@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2f2926;
+}
+
+.linha-horizontal {
+    height: 10px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 2px;
+}
+
+.mensagem {
+    font-size: 1.2rem;
+}
+
+.centralizar-componentes-horizontal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto-area {
+    width: 100%;
+    border-radius: 2px;
+    height: 150px ;
+}
+
+form{
+    /* border: 2px solid var(--light); */
+    border-radius: 2px;
+    padding: 15px 2px;
+}
+
+li.anotacao{
+    position: relative;
+    list-style: none;
+    background-color: #f5d796;
+    border-radius: 2px;
+    padding: 10px 30px;
+    margin: 10px 0;
+    animation: aparece .5s ;
+    /* word-wrap: break-word; */
+}
+
+li.anotacao div.grampo{
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    border-radius: 2px;
+    height: 4px;
+    width: 25px;
+    background-color: var(--secondary);
+    box-shadow: 0 8px var(--secondary);
+}
+
+li.anotacao div:not(.grampo){
+    border-bottom: 2px  solid #bf0000;
+}
+li.anotacao div pre{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes aparece{
+    from{
+        margin-top: -5px;
+    }
+    to{
+        margin-top: 0px;
+    }
+}
+
