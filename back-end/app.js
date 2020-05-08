@@ -22,6 +22,12 @@ app.post('/anotacoes',(req,res)=>{
     res.json({resultado: array});
 })
 
+app.get('/excluir/:index',(req,res)=>{
+    const index = req.params.index;
+    array.splice(index,1);
+    res.json({novaLista:array});
+})
+
 app.listen(9000, () => {
     console.log('Servidor rodando na porta 9000!');
 });

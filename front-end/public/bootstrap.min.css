@@ -21,14 +21,14 @@
     --pink: #e83e8c;
     --red: #DF382C;
     --orange: #E95420;
-    --yellow: #EFB73E;
+    --yellow:  #ffc20d;
     --green: #38B44A;
     --teal: #20c997;
     --cyan: #17a2b8;
     --white: #fff;
     --gray: #868e96;
     --gray-dark: #333;
-    --primary: #E95420;
+    --primary: #f5f5f5;
     --secondary: #AEA79F;
     --success: #38B44A;
     --info: #17a2b8;
@@ -44,7 +44,9 @@
     --font-family-sans-serif: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
-
+.bg-yellow{
+    background-color: var(--yellow);
+}
 *, *::before, *::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box
@@ -2694,20 +2696,20 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-secondary {
     color: #fff;
-    background-color: #AEA79F;
-    border-color: #AEA79F
+    background-color: #333;
+    border-color: #333
 }
 
 .btn-secondary:hover {
     color: #fff;
-    background-color: #9c948a;
-    border-color: #978e83
+    background-color: #4b4b4b;
+    border-color: #4b4b4b
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
     color: #fff;
-    background-color: #9c948a;
-    border-color: #978e83;
+    background-color: #4b4b4b;
+    border-color: #4b4b4b;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(186, 180, 173, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(186, 180, 173, 0.5)
 }
@@ -2720,8 +2722,8 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show>.btn-secondary.dropdown-toggle {
     color: #fff;
-    background-color: #978e83;
-    border-color: #91877c
+    background-color: #4b4b4b;
+    border-color: #4b4b4b
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show>.btn-secondary.dropdown-toggle:focus {

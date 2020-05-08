@@ -6,12 +6,12 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className='container'>
-                <h1 className='text-center pt-3'>Web Notes</h1>
-                <div className='row'>
+            <>
+                <h1 className='text-center bg-yellow py-4'>Web Notes</h1>
+                <div className='container-fluid'>
                     <Form />
                 </div>
-            </div>
+            </>
         );
     }
 }
