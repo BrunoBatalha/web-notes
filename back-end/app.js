@@ -13,19 +13,19 @@ app.get('/', (req, res) => {
     res.send('rodando');
 });
 
-app.post('/enviar', (req, res) => {
+app.post('/anotacao', (req, res) => {
     array.push(req.body.anotacao);
-    res.json({ resposta: 'Anotação salva com sucesso' });
+    res.json('OK');
 });
 
-app.post('/anotacoes',(req,res)=>{
-    res.json({resultado: array});
+app.get('/anotacao',(req,res)=>{
+    res.json(array);
 })
 
-app.get('/excluir/:index',(req,res)=>{
+app.delete('/anotacao/:index',(req,res)=>{
     const index = req.params.index;
     array.splice(index,1);
-    res.json({novaLista:array});
+    res.json('OK');
 })
 
 app.listen(9000, () => {

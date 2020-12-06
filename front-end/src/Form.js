@@ -5,7 +5,7 @@ import axios from 'axios';
 class Form extends React.Component {
 
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
             anotacao: '',
             lista: ['Anotacao1', 'Anotacao2', 'Anotacao1', 'Anotacao2', 'Anotacao1',
@@ -46,12 +46,12 @@ class Form extends React.Component {
     }
 
     async adiciona() {
-        const resposta = await axios.post('/enviar', { anotacao: this.state.anotacao });
+        const resposta = await axios.post('anotacao', { anotacao: this.state.anotacao });
         if (resposta.status === 200) this.atualizaListaNaTela(resposta.data.resposta);
     }
 
     async lista() {
-        return await (await axios.post('anotacoes')).data.resultado
+        return await (await axios.get('anotacao')).data.resultado
     }
 
     async atualizaListaNaTela(mensagem) {
@@ -62,7 +62,7 @@ class Form extends React.Component {
     }
 
     async exclui(index) {
-        const novaLista = await (await axios.get(`/excluir/:${index}`)).data.novaLista;
+        const novaLista = await (await axios.delete(`anotacao/:${index}`)).data.novaLista;
         this.setState({ lista: novaLista })
     }
 
