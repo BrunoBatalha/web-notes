@@ -1,0 +1,59 @@
+#ColumnListNotes {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+}
+
+#ColumnListNotes>li {
+    list-style: none;
+    width: 100%;
+}
+
+#ColumnListNotes>li div.anotacao {
+    position: relative;
+    background-color: #f3d189;
+    border-radius: 2px;
+    padding: 20px 60px 20px 30px;
+    /* margin: 10px ; */
+    animation: aparece .2s;
+    word-wrap: break-word;
+}
+
+#ColumnListNotes>li div.anotacao::before {
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    border-radius: 2px;
+    height: 8px;
+    width: 25px;
+    background-color: var(--secondary);
+    box-shadow: 0 16px var(--secondary);
+}
+
+#ColumnListNotes>li div.anotacao div.opcoes {
+    /* display: flex;
+    flex-flow: row-reverse; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#ColumnListNotes>li div.anotacao div.nota {
+    border-bottom: 2px solid #bf0000;
+}
+
+#ColumnListNotes>li div.anotacao div pre {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes aparece {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
